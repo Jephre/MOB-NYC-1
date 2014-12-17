@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="14B25" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="R51-DF-S8b">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="14B25" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="G9a-QS-BhL">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Jeff's First App-->
         <scene sceneID="ufC-wZ-h7g">
             <objects>
                 <viewController id="vXZ-lx-hvc" customClass="ViewController" customModule="Lesson01" customModuleProvider="target" sceneMemberID="viewController">
@@ -70,7 +70,7 @@
                             <constraint firstAttribute="centerX" secondItem="0zk-jw-GGg" secondAttribute="centerX" constant="105" id="zwb-Cm-kUb"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="hwi-Mf-doX"/>
+                    <navigationItem key="navigationItem" title="Jeff's First App" id="hwi-Mf-doX"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
@@ -206,7 +206,7 @@ He quit work, went to GA, took the UXDi course and is a new man (career-wise). H
             </objects>
             <point key="canvasLocation" x="1644" y="370"/>
         </scene>
-        <!--View Controller-->
+        <!--Login-->
         <scene sceneID="OzN-NC-x3m">
             <objects>
                 <viewController id="R51-DF-S8b" sceneMemberID="viewController">
@@ -279,7 +279,7 @@ He quit work, went to GA, took the UXDi course and is a new man (career-wise). H
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rte-iE-vhn">
-                                <rect key="frame" x="277" y="342" width="38" height="30"/>
+                                <rect key="frame" x="281" y="342" width="38" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="LTj-4A-9tn"/>
                                     <constraint firstAttribute="height" constant="30" id="LV7-1e-Nu8"/>
@@ -296,7 +296,7 @@ He quit work, went to GA, took the UXDi course and is a new man (career-wise). H
                                     </mask>
                                 </variation>
                                 <connections>
-                                    <segue destination="G9a-QS-BhL" kind="show" id="d8e-Kb-H2A"/>
+                                    <segue destination="vXZ-lx-hvc" kind="show" id="zKk-qp-gLG"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -346,10 +346,11 @@ He quit work, went to GA, took the UXDi course and is a new man (career-wise). H
                             </mask>
                         </variation>
                     </view>
+                    <navigationItem key="navigationItem" title="Login" id="bC4-w6-K5U"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9wt-9d-Hgs" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-997" y="370"/>
+            <point key="canvasLocation" x="-307" y="370"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="mBA-HW-gNc">
@@ -361,12 +362,12 @@ He quit work, went to GA, took the UXDi course and is a new man (career-wise). H
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>
-                        <segue destination="vXZ-lx-hvc" kind="relationship" relationship="rootViewController" id="aBY-PN-9OG"/>
+                        <segue destination="R51-DF-S8b" kind="relationship" relationship="rootViewController" id="Jv1-eO-sUl"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="DM5-c4-phv" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-328" y="370"/>
+            <point key="canvasLocation" x="-979" y="370"/>
         </scene>
     </scenes>
     <resources>
@@ -374,6 +375,6 @@ He quit work, went to GA, took the UXDi course and is a new man (career-wise). H
         <image name="Kinkakuji_9272.jpg" width="1386" height="918"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="0y4-ib-1yz"/>
+        <segue reference="ld4-Xp-Rgl"/>
     </inferredMetricsTieBreakers>
 </document>
