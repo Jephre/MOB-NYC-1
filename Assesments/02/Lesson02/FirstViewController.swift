@@ -10,19 +10,26 @@ import UIKit
 
 class FirstViewController: UIViewController {
     
+    @IBOutlet weak var helloWorldLabel: UILabel!
+    
     @IBOutlet weak var modifiedLabel: UILabel!
     
     @IBOutlet weak var drinkLabel: UILabel!
-    @IBOutlet weak var voteLabel: UILabel!
-    @IBOutlet weak var driveLabel: UILabel!
    
     @IBOutlet weak var oneLinerLabel: UILabel!
     
+    @IBAction func buttonTapped(sender: AnyObject) {
+        helloWorldFunc()
+        nameAgeRead()
+        yourRights()
+        oneLinerAnswer()
+    }
+    
     //TODO one: hook up a button in interface builder to a new function (to be written) in this class. Also hook up the label to this class. When the button is clicked, the function to be written must make a label say ‘hello world!’
     
-    /* @IBAction func buttonTapped(sender: AnyObject) {
-        modifiedLabel.text = "hello world!"
-    } */
+    func helloWorldFunc() {
+        helloWorldLabel.text = "hello world!"
+    }
     
     //TODO two: Connect the ‘name’ and ‘age’ text boxes to this class. Hook up the button to a NEW function (in addition to the function previously defined). That function must look at the string entered in the text box and print out “Hello {name}, you are {age} years old!”
     
@@ -30,40 +37,24 @@ class FirstViewController: UIViewController {
     
     @IBOutlet weak var ageField: UITextField!
     
-    @IBAction func buttonTapped(sender: AnyObject) {
+    func nameAgeRead() {
         modifiedLabel.text = "Hello \(nameField.text), you are \(ageField.text) years old!"
-        drinkRights()
-        voteRights()
-        driveRights()
-        oneLinerAnswer()
     }
     
     //TODO three: Hook up the button to a NEW function (in addition to the two above). Print “You can drink” below the above text if the user is above 21. If they are above 18, print “you can vote”. If they are above 16, print “You can drive”
     
-    func drinkRights() {
-        if ageField.text.toInt() > 21 {
-            drinkLabel.text = "You can drink"
+    func yourRights() {
+        if ageField.text.toInt() >= 21 {
+            drinkLabel.text = "You can drink, vote, and drive"
+        }
+        else if ageField.text.toInt() >= 18 {
+            drinkLabel.text = "You can vote, and you can drive"
+        }
+        else if ageField.text.toInt() >= 16 {
+            drinkLabel.text = "You can drive"
         }
         else {
-            drinkLabel.text = "Sorry, you can't drink"
-        }
-    }
-    
-    func voteRights() {
-        if ageField.text.toInt() > 18 {
-            voteLabel.text = "You can vote"
-        }
-        else {
-            voteLabel.text = "Sorry, you can't vote"
-        }
-    }
-    
-    func driveRights() {
-        if ageField.text.toInt() > 16 {
-            driveLabel.text = "You can drive"
-        }
-        else {
-            driveLabel.text = "Sorry, you can't drive"
+            drinkLabel.text = "Sorry, you can't drink, vote, or drive!"
         }
     }
     
@@ -79,7 +70,7 @@ class FirstViewController: UIViewController {
         }
         else if ageField.text.toInt() >= 21 {
             oneLinerLabel.text = "You can drive, vote and drink (but not at the same time!)"
-            oneLinerLabel.numberOfLines = 0
+            oneLinerLabel.numberOfLines = 2
         }
         else {
             oneLinerLabel.text = "You can't drive, vote, OR drink! Sorry."
