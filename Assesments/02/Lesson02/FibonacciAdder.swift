@@ -16,10 +16,13 @@ class FibonacciAdder: NSObject {
             var c = 1
         
             if index == 1 {
-                println(0)
+                return a
             }
             else if index == 2 {
-                println(1)
+                return b
+            }
+            else if index <= 0 {
+                return a
             }
             else {
                 for _ in 3...index {
