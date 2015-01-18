@@ -13,6 +13,7 @@
 		A60F13FE1A6497F9005E2E39 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A60F13FD1A6497F9005E2E39 /* Images.xcassets */; };
 		A60F14011A6497F9005E2E39 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = A60F13FF1A6497F9005E2E39 /* LaunchScreen.xib */; };
 		A60F140D1A6497F9005E2E39 /* Animal_AppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A60F140C1A6497F9005E2E39 /* Animal_AppTests.swift */; };
+		A60F14171A649816005E2E39 /* Animal.swift in Sources */ = {isa = PBXBuildFile; fileRef = A60F14161A649816005E2E39 /* Animal.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +37,7 @@
 		A60F14061A6497F9005E2E39 /* Animal AppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Animal AppTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A60F140B1A6497F9005E2E39 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A60F140C1A6497F9005E2E39 /* Animal_AppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Animal_AppTests.swift; sourceTree = "<group>"; };
+		A60F14161A649816005E2E39 /* Animal.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Animal.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,6 +82,7 @@
 				A60F13F61A6497F9005E2E39 /* AppDelegate.swift */,
 				A60F13F81A6497F9005E2E39 /* ViewController.swift */,
 				A60F13FA1A6497F9005E2E39 /* Main.storyboard */,
+				A60F14161A649816005E2E39 /* Animal.swift */,
 				A60F13FD1A6497F9005E2E39 /* Images.xcassets */,
 				A60F13FF1A6497F9005E2E39 /* LaunchScreen.xib */,
 				A60F13F41A6497F9005E2E39 /* Supporting Files */,
@@ -213,6 +216,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A60F13F91A6497F9005E2E39 /* ViewController.swift in Sources */,
+				A60F14171A649816005E2E39 /* Animal.swift in Sources */,
 				A60F13F71A6497F9005E2E39 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

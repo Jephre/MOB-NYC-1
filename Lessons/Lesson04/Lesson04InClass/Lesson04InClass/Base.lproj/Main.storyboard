@@ -15,9 +15,76 @@
                     <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rF0-bu-qoL">
+                                <rect key="frame" x="241" y="285" width="118" height="30"/>
+                                <state key="normal" title="Click to calculate">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="buttonTapped:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="UJm-LE-u6g"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="You haven't pressed the button yet." lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tSb-EM-D3P">
+                                <rect key="frame" x="164" y="334" width="272" height="20.5"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="272" id="SIF-0H-JH0"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="W7W-3m-cDG">
+                                <rect key="frame" x="252" y="242" width="97" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="97" id="WEl-B1-pJ2"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="HXC-RO-XPy">
+                                <rect key="frame" x="252" y="94" width="97" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="97" id="8qe-Ou-fPU"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tip %" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kib-iL-M7M">
+                                <rect key="frame" x="277" y="58" width="46" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Total Bill Amount" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Gkg-00-2zn">
+                                <rect key="frame" x="236" y="213" width="129" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <gestureRecognizers/>
+                        <constraints>
+                            <constraint firstAttribute="centerX" secondItem="W7W-3m-cDG" secondAttribute="centerX" id="3KV-xh-AQb"/>
+                            <constraint firstItem="W7W-3m-cDG" firstAttribute="top" secondItem="Gkg-00-2zn" secondAttribute="bottom" constant="8" id="7qh-Ug-Vtz"/>
+                            <constraint firstAttribute="centerX" secondItem="tSb-EM-D3P" secondAttribute="centerX" id="ErT-Ku-7ys"/>
+                            <constraint firstAttribute="centerX" secondItem="HXC-RO-XPy" secondAttribute="centerX" id="Hah-5V-Ezb"/>
+                            <constraint firstItem="rF0-bu-qoL" firstAttribute="top" secondItem="W7W-3m-cDG" secondAttribute="bottom" constant="13" id="SRk-A8-yKa"/>
+                            <constraint firstAttribute="centerX" secondItem="Gkg-00-2zn" secondAttribute="centerX" id="Xdb-Tc-o2w"/>
+                            <constraint firstAttribute="centerX" secondItem="kib-iL-M7M" secondAttribute="centerX" id="ejO-cf-xEH"/>
+                            <constraint firstItem="HXC-RO-XPy" firstAttribute="top" secondItem="kib-iL-M7M" secondAttribute="bottom" constant="15" id="fza-ZE-Ozs"/>
+                            <constraint firstItem="tSb-EM-D3P" firstAttribute="top" secondItem="rF0-bu-qoL" secondAttribute="bottom" constant="19" id="wCm-tA-psW"/>
+                            <constraint firstItem="W7W-3m-cDG" firstAttribute="top" secondItem="HXC-RO-XPy" secondAttribute="bottom" constant="118" id="wLP-OH-vYK"/>
+                            <constraint firstAttribute="centerY" secondItem="rF0-bu-qoL" secondAttribute="centerY" id="wNR-7l-faJ"/>
+                            <constraint firstAttribute="centerX" secondItem="rF0-bu-qoL" secondAttribute="centerX" id="wvn-gn-ERU"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="tipField" destination="HXC-RO-XPy" id="kt0-Pb-B2n"/>
+                        <outlet property="totalBill" destination="W7W-3m-cDG" id="Jp4-Sr-XJk"/>
+                        <outlet property="yoLabel" destination="tSb-EM-D3P" id="b81-Qt-v2I"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>

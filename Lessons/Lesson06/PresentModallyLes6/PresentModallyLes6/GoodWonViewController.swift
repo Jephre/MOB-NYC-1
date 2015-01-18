@@ -21,6 +21,9 @@ class GoodWonViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
+    @IBAction func dismissGoodModal(sender: AnyObject) {
+        
+    }
 
     /*
     // MARK: - Navigation

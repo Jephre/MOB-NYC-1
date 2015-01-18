@@ -13,6 +13,9 @@
 		A6A394CC1A673F2000D4E6A1 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A6A394CB1A673F2000D4E6A1 /* Images.xcassets */; };
 		A6A394CF1A673F2000D4E6A1 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = A6A394CD1A673F2000D4E6A1 /* LaunchScreen.xib */; };
 		A6A394DB1A673F2000D4E6A1 /* FightClubTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6A394DA1A673F2000D4E6A1 /* FightClubTests.swift */; };
+		A6A394E51A673F7000D4E6A1 /* PlayerClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6A394E41A673F7000D4E6A1 /* PlayerClass.swift */; };
+		A6A394E71A673F7900D4E6A1 /* Match.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6A394E61A673F7900D4E6A1 /* Match.swift */; };
+		A6A394E91A6741DE00D4E6A1 /* MatchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6A394E81A6741DE00D4E6A1 /* MatchViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +39,9 @@
 		A6A394D41A673F2000D4E6A1 /* FightClubTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FightClubTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A6A394D91A673F2000D4E6A1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A6A394DA1A673F2000D4E6A1 /* FightClubTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FightClubTests.swift; sourceTree = "<group>"; };
+		A6A394E41A673F7000D4E6A1 /* PlayerClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlayerClass.swift; sourceTree = "<group>"; };
+		A6A394E61A673F7900D4E6A1 /* Match.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Match.swift; sourceTree = "<group>"; };
+		A6A394E81A6741DE00D4E6A1 /* MatchViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MatchViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,7 +85,10 @@
 			children = (
 				A6A394C41A673F2000D4E6A1 /* AppDelegate.swift */,
 				A6A394C61A673F2000D4E6A1 /* ViewController.swift */,
+				A6A394E81A6741DE00D4E6A1 /* MatchViewController.swift */,
 				A6A394C81A673F2000D4E6A1 /* Main.storyboard */,
+				A6A394E41A673F7000D4E6A1 /* PlayerClass.swift */,
+				A6A394E61A673F7900D4E6A1 /* Match.swift */,
 				A6A394CB1A673F2000D4E6A1 /* Images.xcassets */,
 				A6A394CD1A673F2000D4E6A1 /* LaunchScreen.xib */,
 				A6A394C21A673F2000D4E6A1 /* Supporting Files */,
@@ -212,8 +221,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A6A394E51A673F7000D4E6A1 /* PlayerClass.swift in Sources */,
 				A6A394C71A673F2000D4E6A1 /* ViewController.swift in Sources */,
 				A6A394C51A673F2000D4E6A1 /* AppDelegate.swift in Sources */,
+				A6A394E71A673F7900D4E6A1 /* Match.swift in Sources */,
+				A6A394E91A6741DE00D4E6A1 /* MatchViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

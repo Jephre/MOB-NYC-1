@@ -13,6 +13,10 @@
 		A6A395001A67447F00D4E6A1 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A6A394FF1A67447F00D4E6A1 /* Images.xcassets */; };
 		A6A395031A67447F00D4E6A1 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = A6A395011A67447F00D4E6A1 /* LaunchScreen.xib */; };
 		A6A3950F1A67447F00D4E6A1 /* PresentModallyLes6Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6A3950E1A67447F00D4E6A1 /* PresentModallyLes6Tests.swift */; };
+		A6A395191A6754BD00D4E6A1 /* Match.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6A395181A6754BD00D4E6A1 /* Match.swift */; };
+		A6A3951B1A6754D200D4E6A1 /* PlayerClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6A3951A1A6754D200D4E6A1 /* PlayerClass.swift */; };
+		A6A3951D1A675A0500D4E6A1 /* GoodWonViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6A3951C1A675A0500D4E6A1 /* GoodWonViewController.swift */; };
+		A6A3951F1A675A2500D4E6A1 /* BadWonViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6A3951E1A675A2500D4E6A1 /* BadWonViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +40,10 @@
 		A6A395081A67447F00D4E6A1 /* PresentModallyLes6Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PresentModallyLes6Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A6A3950D1A67447F00D4E6A1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A6A3950E1A67447F00D4E6A1 /* PresentModallyLes6Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PresentModallyLes6Tests.swift; sourceTree = "<group>"; };
+		A6A395181A6754BD00D4E6A1 /* Match.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Match.swift; sourceTree = "<group>"; };
+		A6A3951A1A6754D200D4E6A1 /* PlayerClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlayerClass.swift; sourceTree = "<group>"; };
+		A6A3951C1A675A0500D4E6A1 /* GoodWonViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GoodWonViewController.swift; sourceTree = "<group>"; };
+		A6A3951E1A675A2500D4E6A1 /* BadWonViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BadWonViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,7 +87,11 @@
 			children = (
 				A6A394F81A67447F00D4E6A1 /* AppDelegate.swift */,
 				A6A394FA1A67447F00D4E6A1 /* ViewController.swift */,
+				A6A395181A6754BD00D4E6A1 /* Match.swift */,
+				A6A3951A1A6754D200D4E6A1 /* PlayerClass.swift */,
 				A6A394FC1A67447F00D4E6A1 /* Main.storyboard */,
+				A6A3951E1A675A2500D4E6A1 /* BadWonViewController.swift */,
+				A6A3951C1A675A0500D4E6A1 /* GoodWonViewController.swift */,
 				A6A394FF1A67447F00D4E6A1 /* Images.xcassets */,
 				A6A395011A67447F00D4E6A1 /* LaunchScreen.xib */,
 				A6A394F61A67447F00D4E6A1 /* Supporting Files */,
@@ -212,8 +224,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A6A3951D1A675A0500D4E6A1 /* GoodWonViewController.swift in Sources */,
 				A6A394FB1A67447F00D4E6A1 /* ViewController.swift in Sources */,
 				A6A394F91A67447F00D4E6A1 /* AppDelegate.swift in Sources */,
+				A6A395191A6754BD00D4E6A1 /* Match.swift in Sources */,
+				A6A3951B1A6754D200D4E6A1 /* PlayerClass.swift in Sources */,
+				A6A3951F1A675A2500D4E6A1 /* BadWonViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -405,6 +421,7 @@
 				A6A395141A67447F00D4E6A1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		A6A395151A67447F00D4E6A1 /* Build configuration list for PBXNativeTarget "PresentModallyLes6Tests" */ = {
 			isa = XCConfigurationList;
@@ -413,6 +430,7 @@
 				A6A395171A67447F00D4E6A1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

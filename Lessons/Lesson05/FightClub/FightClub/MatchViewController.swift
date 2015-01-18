@@ -10,6 +10,8 @@ import UIKit
 
 class MatchViewController: UIViewController {
 
+    @IBOutlet weak var resultsLabel: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -32,4 +34,9 @@ class MatchViewController: UIViewController {
     }
     */
 
+    
+    @IBAction func startMatch(sender: AnyObject) {
+        resultsLabel.text = Match().playGame()
+    }
+    
 }
