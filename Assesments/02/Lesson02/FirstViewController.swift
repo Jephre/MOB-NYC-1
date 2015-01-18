@@ -70,7 +70,6 @@ class FirstViewController: UIViewController {
         }
         else if ageField.text.toInt() >= 21 {
             oneLinerLabel.text = "You can drive, vote and drink (but not at the same time!)"
-            oneLinerLabel.numberOfLines = 2
         }
         else {
             oneLinerLabel.text = "You can't drive, vote, OR drink! Sorry."
