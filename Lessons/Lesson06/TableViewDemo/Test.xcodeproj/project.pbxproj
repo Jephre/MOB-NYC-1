@@ -9,10 +9,10 @@
 /* Begin PBXBuildFile section */
 		5D94313A1A670CD40098E007 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D9431391A670CD40098E007 /* AppDelegate.swift */; };
 		5D94313C1A670CD40098E007 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D94313B1A670CD40098E007 /* ViewController.swift */; };
-		5D94313F1A670CD40098E007 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5D94313D1A670CD40098E007 /* Main.storyboard */; };
 		5D9431411A670CD40098E007 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5D9431401A670CD40098E007 /* Images.xcassets */; };
 		5D9431441A670CD40098E007 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5D9431421A670CD40098E007 /* LaunchScreen.xib */; };
 		5D9431501A670CD40098E007 /* TestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D94314F1A670CD40098E007 /* TestTests.swift */; };
+		A6A395211A675C5000D4E6A1 /* ModalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6A395201A675C5000D4E6A1 /* ModalViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -30,12 +30,12 @@
 		5D9431381A670CD40098E007 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5D9431391A670CD40098E007 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5D94313B1A670CD40098E007 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		5D94313E1A670CD40098E007 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		5D9431401A670CD40098E007 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		5D9431431A670CD40098E007 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		5D9431491A670CD40098E007 /* TestTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TestTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5D94314E1A670CD40098E007 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5D94314F1A670CD40098E007 /* TestTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestTests.swift; sourceTree = "<group>"; };
+		A6A395201A675C5000D4E6A1 /* ModalViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ModalViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,7 +79,7 @@
 			children = (
 				5D9431391A670CD40098E007 /* AppDelegate.swift */,
 				5D94313B1A670CD40098E007 /* ViewController.swift */,
-				5D94313D1A670CD40098E007 /* Main.storyboard */,
+				A6A395201A675C5000D4E6A1 /* ModalViewController.swift */,
 				5D9431401A670CD40098E007 /* Images.xcassets */,
 				5D9431421A670CD40098E007 /* LaunchScreen.xib */,
 				5D9431371A670CD40098E007 /* Supporting Files */,
@@ -192,7 +192,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5D94313F1A670CD40098E007 /* Main.storyboard in Resources */,
 				5D9431441A670CD40098E007 /* LaunchScreen.xib in Resources */,
 				5D9431411A670CD40098E007 /* Images.xcassets in Resources */,
 			);
@@ -213,6 +212,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5D94313C1A670CD40098E007 /* ViewController.swift in Sources */,
+				A6A395211A675C5000D4E6A1 /* ModalViewController.swift in Sources */,
 				5D94313A1A670CD40098E007 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -236,14 +236,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		5D94313D1A670CD40098E007 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				5D94313E1A670CD40098E007 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		5D9431421A670CD40098E007 /* LaunchScreen.xib */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -405,6 +397,7 @@
 				5D9431551A670CD40098E007 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		5D9431561A670CD40098E007 /* Build configuration list for PBXNativeTarget "TestTests" */ = {
 			isa = XCConfigurationList;
@@ -413,6 +406,7 @@
 				5D9431581A670CD40098E007 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

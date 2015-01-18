@@ -8,6 +8,12 @@
 
 import UIKit
 
+// Table view controller is a scrollable list (just vertically scrollable list of stuff with some things in it). One dimensional, compared with e.g. Photos app which is multidimensional (has horizontal dimension)
+
+// Table views have sections, rows, index paths, and cells. E.g. in contacts app, sections = the letter headers and everything within them, rows = the individual positions of the contact rows within the section. cells = the actual contacts themselves.
+
+// Look into UIGestureRecognizers
+
 class ViewController: UITableViewController, UITableViewDataSource, UITableViewDelegate {
 
     let teachers = ["Rudd", "Travis", "Sean"]
@@ -27,5 +33,15 @@ class ViewController: UITableViewController, UITableViewDataSource, UITableViewD
         cell.textLabel?.text = teachers[indexPath.row]
         return cell
     }
+    
+    override func viewDidAppear(animated: Bool) {
+        println("view appeared! Woohoo!")
+    }
+    
+    override func tableview(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+        
+    }
+    
 }
+
 
