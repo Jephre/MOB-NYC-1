@@ -13,12 +13,18 @@ class SecondViewController: UIViewController {
     @IBOutlet weak var numberField: UITextField!
     @IBOutlet weak var numberOutput: UILabel!
     //TODO five: Display the cumulative sum of all numbers added every time the ‘add’ button is pressed. Hook up the label, text box and button to make this work.
-   
+   var cumulativeSum = 0
+    
     @IBAction func buttonTapped(sender: AnyObject) {
-        var outputStorage:Int? = numberOutput.text?.toInt()
-        var cumulativeSum = outputStorage! + numberField.text.toInt()!
-        numberOutput.text = "\(cumulativeSum)"
+        if let workingNum = numberField.text.toInt() {
+            cumulativeSum += workingNum
+            numberOutput.text = "\(cumulativeSum)"
+        }
+
     }
+    
+    
+    
     /* Some big questions I had for this:
     1) I declare that the new variable outputStorage has an optional Int type. Why does it have to be optional? Why can't I just declare that my outputStorage HAS to have a value and it HAS to be an Int type?
         UILabel is unwrapped (technicality), so I would need an optional ? when referencing it. Unwrapped = you know it's not nil. Same reason for numberOutput
