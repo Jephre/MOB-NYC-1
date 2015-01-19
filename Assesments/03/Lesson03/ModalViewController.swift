@@ -16,6 +16,7 @@ class ModalViewController: UIViewController {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        // TODO two: Add an imageview to the modal dialog presented in TODO two.
         var image = UIImage(named: "CoolCat.JPG")
         
     }
