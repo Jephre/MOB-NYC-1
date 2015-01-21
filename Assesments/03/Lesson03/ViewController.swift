@@ -11,6 +11,7 @@ import UIKit
 class ViewController: UIViewController {
     
     @IBOutlet weak var swipeBox: UILabel!
+    // UILabel is a subclass of UIView
     
     @IBOutlet weak var tableButton: UIButton!
     
@@ -32,13 +33,29 @@ class ViewController: UIViewController {
         tableButton.layer.masksToBounds = true
         tableButton.layer.cornerRadius = 5.0
 //        tableButton.frame = CGRectMake(220.0, 41.0, 150, 50)
+        
+        var swipeRight = UISwipeGestureRecognizer(target: self, action: Selector("swipeOnLabel:"))
+        swipeBox.addGestureRecognizer(swipeRight)
+
     }
 
+    func swipeOnLabel(sender: UISwipeGestureRecognizer) {
+        println("Did swipe")
+        var st = UIStoryboard(name: "Main", bundle: nil)
+        let vc = st.instantiateViewControllerWithIdentifier("modalPopup") as ModalViewController
+        self.presentViewController(vc, animated: true, completion: nil)
+    }
+    
+    // UIStoryboard *st = [UIStoryboard storyboardWithName:@"StoryboardName" bundle:nil];
+    // UIViewController _mpvc = [st instantiateViewControllerWithIdentifier:@"swipeRight"];
+    // [self presentViewController:_mpvc animated:YES completion:nil];
+
+    
     /*
     TODO one: Hook up a swipeable area on the home screen that must present a modal dialog when swiped. You must create the modal dialog and present it in CODE (not the storyboard).
         
     */
-    
+
     
     /*
     
