@@ -15,7 +15,8 @@ import UIKit
 // Look into UIGestureRecognizers
 
 class ViewController: UITableViewController, UITableViewDataSource, UITableViewDelegate {
-
+// the reason why ViewController can have more than one parent class is because these classes aren't actually classes. They're protocols. Protocols DON'T define behavior. They're a grouping of functions and variables and classes that meet the protocol. Functions that meet this protocol have these methods and variables.
+    
     let teachers = ["Rudd", "Travis", "Sean"]
 
     override func numberOfSectionsInTableView(tableView: UITableView) -> Int {

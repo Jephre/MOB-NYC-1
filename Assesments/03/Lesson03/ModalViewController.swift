@@ -18,10 +18,11 @@ class ModalViewController: UIViewController {
         // Do any additional setup after loading the view.
         // TODO two: Add an imageview to the modal dialog presented in TODO two.
         let dismissBtn = UIButton.buttonWithType(UIButtonType.System) as UIButton
-        dismissBtn.frame = CGRectMake(0, 181.0, 206.0, 55)
-        dismissBtn.contentHorizontalAlignment = .Center
-        dismissBtn.contentVerticalAlignment = .Center
-        // how do I programmatically center a button vertically and horizontally?
+//        let screenRect = UIScreen.mainScreen().bounds
+//        dismissBtn.frame = CGRectMake(0, 181.0, 206.0, 55)
+//        dismissBtn.contentHorizontalAlignment = .Center
+//        dismissBtn.contentVerticalAlignment = .Center
+        // how do I programmatically center a button vertically and horizontally? (see below, the part including NSLayoutConstraint)
         dismissBtn.backgroundColor = UIColor(red: 22.0/255.0, green: 160.0/255.0, blue: 133.0/255.0, alpha: 1.0)
         dismissBtn.setTitle("Test Button", forState: UIControlState.Normal)
         dismissBtn.titleLabel?.font = UIFont.systemFontOfSize(31)
@@ -29,6 +30,11 @@ class ModalViewController: UIViewController {
         dismissBtn.layer.masksToBounds = true
         dismissBtn.layer.cornerRadius = 5.0
         dismissBtn.addTarget(self, action: "btnTouched:", forControlEvents: .TouchUpInside)
+        
+        
+        dismissBtn.setTranslatesAutoresizingMaskIntoConstraints(false)
+        let vert = NSLayoutConstraint(item: dismissBtn, attribute: NSLayoutAttribute.CenterY, relatedBy: NSLayoutRelation.Equal, toItem: self.view, attribute: NSLayoutAttribute.CenterY, multiplier: 1.0, constant: 0.0)
+        let horiz = NSLayoutConstraint(item: dismissBtn, attribute: NSLayoutAttribute.CenterX, relatedBy: NSLayoutRelation.Equal, toItem: self.view, attribute: NSLayoutAttribute.CenterX, multiplier: 1.0, constant: 0.0)
         
 
         
@@ -51,7 +57,8 @@ class ModalViewController: UIViewController {
         self.view.insertSubview(dismissBtn, aboveSubview: iv)
         // set the order of views (in this case, we're making the UIImageView higher?
         // use CMD + T to slow-mo animations
-        
+        self.view.addConstraints([vert, horiz])
+
 
         
     }
