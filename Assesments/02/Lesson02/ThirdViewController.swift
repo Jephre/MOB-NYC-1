@@ -18,7 +18,12 @@ class ThirdViewController: UIViewController {
     var numberHolder = 0
     
     @IBAction func buttonTapped(sender: AnyObject) {
+//        if numberField.text.toInt() != nil {
+//            numberField.text.toInt()! % 2 == 0
+//          // the ! would lead to a crash if a nil value exists
+//        }
         if let numberHolder = numberField.text.toInt() {
+            // if the creation of a constant is equal to the input of the text field, run the if code. If it isn't, run else.
             if numberHolder % 2 == 0 {
                 outputOddEven.text = "This is even."
             }
