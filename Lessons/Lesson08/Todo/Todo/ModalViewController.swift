@@ -14,8 +14,9 @@ class ModalViewController: UIViewController {
     var todoViewController: MainTableViewController?
     
     @IBAction func didTapButton(sender: AnyObject) {
-        todoViewController?.todos.append(textField.text)
-        
+        if let todo = todoViewController {
+            todo.todos.append(textField.text)
+        }
         dismissViewControllerAnimated(true, completion: nil)
     }
     

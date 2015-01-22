@@ -71,3 +71,6 @@ strings.reduce("SeedValue", combine: {
 strings.reduce("SeedValue", combine: +)
 // + is a special function that just adds things together
 // all 4 of the above do the same thing
+
+
+
