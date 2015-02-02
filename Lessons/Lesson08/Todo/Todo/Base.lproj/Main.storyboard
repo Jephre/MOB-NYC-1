@@ -79,16 +79,40 @@
                                     <action selector="didTapButton:" destination="Ubv-u0-chb" eventType="touchUpInside" id="fw7-dH-AnI"/>
                                 </connections>
                             </button>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Zgm-ss-32R">
+                                <rect key="frame" x="252" y="215" width="97" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="List item" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="236-IE-6Vy">
+                                <rect key="frame" x="267" y="256" width="66" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="List name" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cj6-X6-pwx">
+                                <rect key="frame" x="263" y="186" width="75" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstAttribute="centerX" secondItem="Zgm-ss-32R" secondAttribute="centerX" id="4rM-UA-ueO"/>
                             <constraint firstItem="zl1-QG-voM" firstAttribute="top" secondItem="RHO-9y-0ts" secondAttribute="bottom" constant="8" id="5Rf-DE-iWk"/>
                             <constraint firstAttribute="centerX" secondItem="zl1-QG-voM" secondAttribute="centerX" id="5Yt-SQ-v0h"/>
+                            <constraint firstItem="Zgm-ss-32R" firstAttribute="top" secondItem="cj6-X6-pwx" secondAttribute="bottom" constant="8" id="5gf-4I-zVU"/>
+                            <constraint firstAttribute="centerX" secondItem="cj6-X6-pwx" secondAttribute="centerX" id="QoF-Lc-adB"/>
+                            <constraint firstItem="cj6-X6-pwx" firstAttribute="top" secondItem="4VP-jJ-npf" secondAttribute="bottom" constant="166" id="bXF-ST-pkm"/>
                             <constraint firstAttribute="centerX" secondItem="RHO-9y-0ts" secondAttribute="centerX" id="pM8-pl-cLR"/>
+                            <constraint firstAttribute="centerX" secondItem="236-IE-6Vy" secondAttribute="centerX" id="pZd-cA-myd"/>
                             <constraint firstAttribute="centerY" secondItem="RHO-9y-0ts" secondAttribute="centerY" id="trP-Rd-2aF"/>
+                            <constraint firstItem="RHO-9y-0ts" firstAttribute="top" secondItem="236-IE-6Vy" secondAttribute="bottom" constant="8" id="xAf-05-ag0"/>
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="listNameField" destination="Zgm-ss-32R" id="4uN-Wh-R49"/>
                         <outlet property="textField" destination="RHO-9y-0ts" id="Qd0-ZA-IO9"/>
                     </connections>
                 </viewController>

@@ -35,13 +35,13 @@ class ViewController: UITableViewController, UITableViewDataSource, UITableViewD
         return cell
     }
     
-    override func viewDidAppear(animated: Bool) {
-        println("view appeared! Woohoo!")
-    }
+//    override func viewDidAppear(animated: Bool) {
+//        println("view appeared! Woohoo!")
+//    }
     
-    override func tableview(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
-        
-    }
+//    func tableview(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+//        
+//    }
     
 }
 

@@ -28,14 +28,14 @@
 
 /* Begin PBXFileReference section */
 		A6134D141A744A0100EF3F89 /* todo-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "todo-Bridging-Header.h"; sourceTree = "<group>"; };
-		A6F9510E1A7080840067D3BA /* todo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = todo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A6F9510E1A7080840067D3BA /* FleshedOutTodos.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FleshedOutTodos.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A6F951121A7080840067D3BA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A6F951131A7080840067D3BA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A6F951151A7080840067D3BA /* ModalViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModalViewController.swift; sourceTree = "<group>"; };
 		A6F951181A7080840067D3BA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		A6F9511A1A7080840067D3BA /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		A6F9511D1A7080840067D3BA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
-		A6F951231A7080840067D3BA /* todoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = todoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A6F951231A7080840067D3BA /* FleshedOutTodosTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FleshedOutTodosTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A6F951281A7080840067D3BA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A6F951291A7080840067D3BA /* todoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = todoTests.swift; sourceTree = "<group>"; };
 		A6F951331A7081FB0067D3BA /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
@@ -71,8 +71,8 @@
 		A6F9510F1A7080840067D3BA /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				A6F9510E1A7080840067D3BA /* todo.app */,
-				A6F951231A7080840067D3BA /* todoTests.xctest */,
+				A6F9510E1A7080840067D3BA /* FleshedOutTodos.app */,
+				A6F951231A7080840067D3BA /* FleshedOutTodosTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -120,9 +120,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		A6F9510D1A7080840067D3BA /* todo */ = {
+		A6F9510D1A7080840067D3BA /* FleshedOutTodos */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = A6F9512D1A7080840067D3BA /* Build configuration list for PBXNativeTarget "todo" */;
+			buildConfigurationList = A6F9512D1A7080840067D3BA /* Build configuration list for PBXNativeTarget "FleshedOutTodos" */;
 			buildPhases = (
 				A6F9510A1A7080840067D3BA /* Sources */,
 				A6F9510B1A7080840067D3BA /* Frameworks */,
@@ -132,14 +132,14 @@
 			);
 			dependencies = (
 			);
-			name = todo;
+			name = FleshedOutTodos;
 			productName = todo;
-			productReference = A6F9510E1A7080840067D3BA /* todo.app */;
+			productReference = A6F9510E1A7080840067D3BA /* FleshedOutTodos.app */;
 			productType = "com.apple.product-type.application";
 		};
-		A6F951221A7080840067D3BA /* todoTests */ = {
+		A6F951221A7080840067D3BA /* FleshedOutTodosTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = A6F951301A7080840067D3BA /* Build configuration list for PBXNativeTarget "todoTests" */;
+			buildConfigurationList = A6F951301A7080840067D3BA /* Build configuration list for PBXNativeTarget "FleshedOutTodosTests" */;
 			buildPhases = (
 				A6F9511F1A7080840067D3BA /* Sources */,
 				A6F951201A7080840067D3BA /* Frameworks */,
@@ -150,9 +150,9 @@
 			dependencies = (
 				A6F951251A7080840067D3BA /* PBXTargetDependency */,
 			);
-			name = todoTests;
+			name = FleshedOutTodosTests;
 			productName = todoTests;
-			productReference = A6F951231A7080840067D3BA /* todoTests.xctest */;
+			productReference = A6F951231A7080840067D3BA /* FleshedOutTodosTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -173,7 +173,7 @@
 					};
 				};
 			};
-			buildConfigurationList = A6F951091A7080840067D3BA /* Build configuration list for PBXProject "todo" */;
+			buildConfigurationList = A6F951091A7080840067D3BA /* Build configuration list for PBXProject "FleshedOutTodos" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -186,8 +186,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				A6F9510D1A7080840067D3BA /* todo */,
-				A6F951221A7080840067D3BA /* todoTests */,
+				A6F9510D1A7080840067D3BA /* FleshedOutTodos */,
+				A6F951221A7080840067D3BA /* FleshedOutTodosTests */,
 			);
 		};
 /* End PBXProject section */
@@ -236,7 +236,7 @@
 /* Begin PBXTargetDependency section */
 		A6F951251A7080840067D3BA /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = A6F9510D1A7080840067D3BA /* todo */;
+			target = A6F9510D1A7080840067D3BA /* FleshedOutTodos */;
 			targetProxy = A6F951241A7080840067D3BA /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -345,7 +345,7 @@
 				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = todo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = FleshedOutTodos;
 				SWIFT_OBJC_BRIDGING_HEADER = "todo/todo-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
@@ -358,7 +358,7 @@
 				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = todo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = FleshedOutTodos;
 				SWIFT_OBJC_BRIDGING_HEADER = "todo/todo-Bridging-Header.h";
 			};
 			name = Release;
@@ -377,7 +377,7 @@
 				);
 				INFOPLIST_FILE = todoTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = FleshedOutTodosTests;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/todo.app/todo";
 			};
 			name = Debug;
@@ -392,7 +392,7 @@
 				);
 				INFOPLIST_FILE = todoTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = FleshedOutTodosTests;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/todo.app/todo";
 			};
 			name = Release;
@@ -400,7 +400,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		A6F951091A7080840067D3BA /* Build configuration list for PBXProject "todo" */ = {
+		A6F951091A7080840067D3BA /* Build configuration list for PBXProject "FleshedOutTodos" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				A6F9512B1A7080840067D3BA /* Debug */,
@@ -409,7 +409,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		A6F9512D1A7080840067D3BA /* Build configuration list for PBXNativeTarget "todo" */ = {
+		A6F9512D1A7080840067D3BA /* Build configuration list for PBXNativeTarget "FleshedOutTodos" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				A6F9512E1A7080840067D3BA /* Debug */,
@@ -418,7 +418,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		A6F951301A7080840067D3BA /* Build configuration list for PBXNativeTarget "todoTests" */ = {
+		A6F951301A7080840067D3BA /* Build configuration list for PBXNativeTarget "FleshedOutTodosTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				A6F951311A7080840067D3BA /* Debug */,

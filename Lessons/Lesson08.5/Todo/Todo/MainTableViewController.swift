@@ -9,23 +9,46 @@
 import UIKit
 
 class MainTableViewController: UITableViewController {
+    // by citing UITableViewController, we already inherit the protocols UITableViewDelegate and UITableViewDataSource
 
-    var todos = ["groceries", "homework", "walk dog"]
+    @IBOutlet weak var mainLabel: UILabel!
+    
+    var todos = [
+        [
+            "name":"groceries",
+            "status":"in progress",
+            "day": "Feb 7"
+        ],
+        [
+            "name":"laundry",
+            "status":"todo",
+            "date":"tomorrow"
+        ]
+    ]
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        mainLabel.alpha = 0
+        // set it to transparent initially
+        
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
 
         // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
         // self.navigationItem.rightBarButtonItem = self.editButtonItem()
+        var notificationCenter = NSNotificationCenter.defaultCenter()
+        notificationCenter.addObserverForName("To-do added!", object: nil, queue: nil) { (notification: NSNotification!) -> Void in
+            self.mainLabel.alpha = 1
+        }
+        // maintableviewcontroller subscribes to the notification that was posted from modalviewcontroller. the name, or first parameter has to be the EXACT same as the name, or first parameter of the posting from the NC of the modal viewcontroller for this notification to send and the code be executed.
     }
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         var destination = segue.destinationViewController as ModalViewController
         destination.todoViewController = self
     }
+    // this allows ModalViewController to know what's happening in this file
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
@@ -49,10 +72,20 @@ class MainTableViewController: UITableViewController {
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCellWithIdentifier("reuseIdentifier", forIndexPath: indexPath) as UITableViewCell
         
-        cell.textLabel?.text = todos[indexPath.row]
+        cell.textLabel?.text = todos[indexPath.row]["name"]
+        cell.detailTextLabel?.text = todos[indexPath.row]["status"]
+        // the line above actually populates the cells with data
         return cell
     }
-
+    
+    override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+        var cell = self.tableView(tableView, cellForRowAtIndexPath: indexPath)
+        cell.backgroundColor = UIColor.blueColor()
+    }
+    // want to set the cell that corresponds to "indexPath" to the color blue (when selected)
+    
+    
+    
     /*
     // Override to support conditional editing of the table view.
     override func tableView(tableView: UITableView, canEditRowAtIndexPath indexPath: NSIndexPath) -> Bool {

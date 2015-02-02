@@ -10,12 +10,18 @@ import UIKit
 
 class ModalViewController: UIViewController {
 
+    @IBOutlet weak var listNameField: UITextField!
     @IBOutlet weak var textField: UITextField!
+    
     var todoViewController: MainTableViewController?
     
     @IBAction func didTapButton(sender: AnyObject) {
         if let todo = todoViewController {
+            if let listName = listNameField.text {
+                
+            }
             todo.todos.append(textField.text)
+            
         }
         dismissViewControllerAnimated(true, completion: nil)
     }

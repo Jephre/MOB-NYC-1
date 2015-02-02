@@ -1,24 +1,21 @@
 //
 //  AppDelegate.swift
-//  Lesson04
+//  todo
 //
-//  Created by Rudd Taylor on 9/28/14.
-//  Copyright (c) 2014 General Assembly. All rights reserved.
+//  Created by Jeffrey Lee on 1/21/15.
+//  Copyright (c) 2015 Jeffrey Lee. All rights reserved.
 //
 
 import UIKit
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
-    // THIS is actually the DELEGATE for our app. E.g. if you want to do something when the app is in the background.  Delegate = trusted friend, it provides information, and gets notified about changes. There is only ever one delegate. Think of protocols as the badges to a boy scout (delegate). Notification differs from this as it's a one-way street (broadcast). Other parts of app can subscribe to these notifications. 
-    // When your view controller goes out of view, may want to unsubscribe any observers from notifications.
 
     var window: UIWindow?
 
+
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         // Override point for customization after application launch.
-        UINavigationBar.appearance().translucent = false
-        // this makes the navbar completely opaque, and also makes it so that the table view and any other views don't overlap with it.
         return true
     }
 
