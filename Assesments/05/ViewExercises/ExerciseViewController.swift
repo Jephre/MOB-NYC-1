@@ -12,6 +12,8 @@ class ExerciseViewController: UIViewController {
     let exerciseView = UIView()
     let exerciseDescription = UILabel()
     
+    // it's possible to refer to the toolbar as a class variable by bringing it out here. (this is helpful to make sure that any functions that reference the space between the toolbar + navbar aren't affected by the toolbar/navbar height changing.
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         

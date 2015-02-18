@@ -22,6 +22,13 @@ class FirstViewController: ExerciseViewController {
         
         Your view should be in self.exerciseView, not self.view
         */
+        
+        var redBox = UIView(frame: CGRect(x: 0, y: 0, width: self.view.frame.size.width, height: 10))
+        var blackColorCG: UIColor = UIColor(red: 0.5, green: 0.5, blue: 0.5, alpha: 1)
+        redBox.backgroundColor = UIColor.redColor()
+        redBox.layer.borderColor = blackColorCG.CGColor
+        
+        self.exerciseView.addSubview(redBox)
     }
     
     override func shouldAutorotate() -> Bool {

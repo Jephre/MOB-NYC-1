@@ -1,9 +1,9 @@
 //
 //  AppDelegate.swift
-//  smile
+//  Smile
 //
-//  Created by Jeffrey Lee on 2/4/15.
-//  Copyright (c) 2015 Jeffrey Lee. All rights reserved.
+//  Created by Rudd Taylor on 2/4/15.
+//  Copyright (c) 2015 GA. All rights reserved.
 //
 
 import UIKit

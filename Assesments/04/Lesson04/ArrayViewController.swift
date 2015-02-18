@@ -20,46 +20,11 @@ class ArrayViewController: UIViewController, UITableViewDelegate, UITableViewDat
     var textField: UITextField = UITextField()
     // initialized instance of UITextField in current view controller
     
-//    func layoutView() {
-//        textField.placeholder = "Please enter in a snake type."
-//        textField.frame = CGRectMake(0, 125, self.view.frame.size.width, 50);
-//        textField.backgroundColor = UIColor.orangeColor()
-//        textField.borderStyle = UITextBorderStyle.Line
-//        
-//        textField.setTranslatesAutoresizingMaskIntoConstraints(false)
-//        view.addSubview(textField)
-//        
-////        let xConstraint = NSLayoutConstraint(item: textField,
-////            attribute: NSLayoutAttribute.CenterX,
-////            relatedBy: NSLayoutRelation.Equal,
-////            toItem: view,
-////            attribute: NSLayoutAttribute.CenterX,
-////            multiplier: 1.0,
-////            constant: 0.0)
-////        self.view.addConstraint(xConstraint)
-////        
-////        let yConstraint = NSLayoutConstraint(item: textField, attribute: NSLayoutAttribute.TopMargin, relatedBy: NSLayoutRelation.Equal, toItem: view, attribute: NSLayoutAttribute.TopMargin, multiplier: 1.0, constant: 100.0)
-////        self.view.addConstraint(yConstraint)
-//        
-////        let yConstraint = NSLayoutConstraint(item: textField,
-////            attribute: NSLayoutAttribute.CenterY,
-////            relatedBy: NSLayoutRelation.Equal,
-////            toItem: view,
-////            attribute: NSLayoutAttribute.CenterY,
-////            multiplier: 1.0,
-////            constant: 0)
-////        self.view.addConstraint(yConstraint)
-//        
-//        //Add leading and trailing margins if necessary (prevent long text content in label1 to be larger than screen)
-////        let viewsDictionary = ["textField" : textField]
-////        view.addConstraints(NSLayoutConstraint.constraintsWithVisualFormat("H:|-(>=10@750)-[textField]-(>=10@750)-|", options: NSLayoutFormatOptions(0), metrics: nil, views: viewsDictionary))
-//    }
-    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // define textField attributes
-        textField.placeholder = "Please enter in a snake type."
+        textField.placeholder = "Please enter anything."
         textField.frame = CGRectMake(0, 0, self.view.frame.size.width, 50);
         textField.backgroundColor = UIColor.orangeColor()
         textField.borderStyle = UITextBorderStyle.Line
@@ -78,11 +43,8 @@ class ArrayViewController: UIViewController, UITableViewDelegate, UITableViewDat
         tableView.dataSource = self
         // tableView instance has a variable named dataSource. We're allowing the tableView to communicate data with the instance of ArrayViewController.
         
-        tableView.registerClass(UITableViewCell.self, forCellReuseIdentifier: "cell")
-        // initialize tableView cells?
-        
-//        layoutView()
-
+//        tableView.registerClass(UITableViewCell.self, forCellReuseIdentifier: "cell")
+        // initialize tableView cells; default style for tablecells doesn't have subtitles.
 
         self.view.addSubview(textField)
         self.view.addSubview(tableView)
@@ -108,11 +70,14 @@ class ArrayViewController: UIViewController, UITableViewDelegate, UITableViewDat
     // set # of rows in the section = the number of items in the items array.
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        var cell: UITableViewCell = tableView.dequeueReusableCellWithIdentifier("cell", forIndexPath: indexPath) as UITableViewCell
+        var cell = tableView.dequeueReusableCellWithIdentifier("cell") as UITableViewCell?
+        if cell == nil {
+            cell = UITableViewCell(style: UITableViewCellStyle.Subtitle, reuseIdentifier: "cell")
+        }
         
-        cell.textLabel?.text = items[indexPath.row]
+        cell!.textLabel?.text = items[indexPath.row]
         
-        return cell
+        return cell!
     }
     // setup the dequeueing process
     

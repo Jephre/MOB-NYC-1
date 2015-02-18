@@ -1,50 +1,88 @@
 //
 //  ViewController.swift
-//  smile
+//  Smile
 //
-//  Created by Jeffrey Lee on 2/4/15.
-//  Copyright (c) 2015 Jeffrey Lee. All rights reserved.
+//  Created by Rudd Taylor on 2/4/15.
+//  Copyright (c) 2015 GA. All rights reserved.
 //
 
 import UIKit
 
 class ViewController: UIViewController {
-    
+
+    @IBOutlet weak var centerY: NSLayoutConstraint!
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-       
-        // SPRINGS AND STRUCTS EXAMPLE
+        autolayout()
+    }
+    
+    func autolayout() {
+        var leftEye = UIView()
+        var rightEye = UIView()
+        leftEye.setTranslatesAutoresizingMaskIntoConstraints(false)
+        rightEye.setTranslatesAutoresizingMaskIntoConstraints(false)
+        view.addSubview(leftEye)
+        view.addSubview(rightEye)
+        leftEye.backgroundColor = UIColor.redColor()
+        
+        view.addConstraint(NSLayoutConstraint(
+            item: leftEye,
+            attribute: .Top,
+            relatedBy: .Equal,
+            toItem: view,
+            attribute: .Top,
+            multiplier: 1.0,
+            constant: 0))
+        view.addConstraint(NSLayoutConstraint(
+            item: leftEye,
+            attribute: .CenterX,
+            relatedBy: .Equal,
+            toItem: view,
+            attribute: .CenterX,
+            multiplier: 0.5,
+            constant: 0))
+        view.addConstraint(NSLayoutConstraint(
+            item: leftEye,
+            attribute: .Width,
+            relatedBy: .Equal,
+            toItem: nil,
+            attribute: NSLayoutAttribute.NotAnAttribute,
+            multiplier: 1.0,
+            constant: 50))
+        view.addConstraint(NSLayoutConstraint(
+            item: leftEye,
+            attribute: .Height,
+            relatedBy: .Equal,
+            toItem: nil,
+            attribute: NSLayoutAttribute.NotAnAttribute,
+            multiplier: 1.0,
+            constant: 50))
+        
+        leftEye.addGestureRecognizer(UITapGestureRecognizer(target: self, action: "didTap"))
+    }
+    
+    func didTap() {
+        centerY.constant = centerY.constant + 10
+        UIView.animateWithDuration(1, animations: { () -> Void in
+            self.view.layoutIfNeeded()
+        })
+    }
+    
+    func springsAndStrutsLayout() {
         let topMargin: CGFloat = 50
         let size: CGFloat = 15
-        // give it type CGFloat to avoid running into errors when using it as a property in subsequent frame definitions
-        
         var leftEye = UIView(frame: CGRect(x: self.view.frame.size.width/4, y: topMargin, width: size, height: size))
-        // divide by four to set it 25% of the way across the entire view
-        var rightEye = UIView(frame: CGRect(x: self.view.frame.size.width/4*3, y: topMargin, width: size, height: size))
-        // multiply by 0.75 to set it 75% of the way across the entire view
+        var rightEye = UIView(frame: CGRect(x: self.view.frame.size.width * 0.75, y: topMargin, width: size, height: size))
+        
         leftEye.backgroundColor = UIColor.purpleColor()
         rightEye.backgroundColor = UIColor.orangeColor()
-        // issue with springs and structs is that when you use CMD + <- or CMD + -> to rotate, everything shifts. To avoid this...
         
-        // add autoresizingmasks
-        leftEye.autoresizingMask = UIViewAutoresizing.FlexibleRightMargin //| UIViewAutoresizing.FlexibleWidth
-        // In this case, we're allowing the right side margin to increase and decrease in size but keep the left side margin the same. For the second half of the "binary OR" statement, this combines numbers. The | only combines numbers, nothing to do with functions.
-        rightEye.autoresizingMask = UIViewAutoresizing.FlexibleLeftMargin //| UIViewAutoresizing.FlexibleWidth
-        
-        var nose = UIView(frame: CGRect(x: self.view.frame.size.width*0.5-(size*2/2), y: topMargin*2, width: size*2, height: size))
-        nose.backgroundColor = UIColor.blueColor()
-        nose.autoresizingMask = UIViewAutoresizing.FlexibleLeftMargin | UIViewAutoresizing.FlexibleRightMargin
-        
-        var mouth = UIView(frame: CGRect(x: self.view.frame.size.width*0.5-(size*4/2), y: topMargin*3, width: size*4, height: size*4))
-        mouth.backgroundColor = UIColor.redColor()
-        mouth.autoresizingMask = UIViewAutoresizing.FlexibleLeftMargin | UIViewAutoresizing.FlexibleRightMargin
+        leftEye.autoresizingMask = UIViewAutoresizing.FlexibleRightMargin | UIViewAutoresizing.FlexibleLeftMargin
+        rightEye.autoresizingMask = UIViewAutoresizing.FlexibleLeftMargin | UIViewAutoresizing.FlexibleRightMargin
         
         view.addSubview(leftEye)
         view.addSubview(rightEye)
-        view.addSubview(nose)
-        view.addSubview(mouth)
-        
     }
 
     override func didReceiveMemoryWarning() {
