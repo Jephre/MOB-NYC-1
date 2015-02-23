@@ -10,6 +10,8 @@ import UIKit
 
 class FourthViewController: ExerciseViewController {
 
+    let scrollView = UIScrollView(frame: UIScreen.mainScreen().bounds)
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         self.exerciseDescription.text = "View 4"
@@ -20,10 +22,14 @@ class FourthViewController: ExerciseViewController {
         In the scroll view, place a blue box at the top (20px high, 10px horizontal margins with the screen, a very tall (1000+px, width the same as the screen) purple label containing white text in the middle, and a red box at the bottom (20px high, 10px horizontal margins with the screen). The scroll view should scroll the entire height of the content.
         
         Use Autolayout.
-
+        
         
         Your view should be in self.exerciseView, not self.view.
         */
+        self.exerciseView = exerciseView.scrollView
+        self.scrollView.contentSize = CGSize(width: self.view.bounds.size.width, height: self.view.bounds.size.height)
+        scrollView.backgroundColor = UIColor.blueColor()
+        
     }
     
     override func shouldAutorotate() -> Bool {
