@@ -26,9 +26,29 @@ class FourthViewController: ExerciseViewController {
         
         Your view should be in self.exerciseView, not self.view.
         */
-        self.exerciseView = exerciseView.scrollView
-        self.scrollView.contentSize = CGSize(width: self.view.bounds.size.width, height: self.view.bounds.size.height)
-        scrollView.backgroundColor = UIColor.blueColor()
+        self.scrollView.contentSize = CGSize(width: self.scrollView.bounds.size.width, height: 2000)
+        scrollView.scrollEnabled = true
+        scrollView.backgroundColor = UIColor.redColor()
+        self.exerciseView.addSubview(scrollView)
+        
+        var navBarHeight = self.navigationController?.navigationBar.frame.maxY ?? exerciseView.frame.minY
+
+        var blueBox = UIView(frame: CGRect(x: 0, y: navBarHeight, width: self.view.bounds.size.width - 20, height: 20))
+        blueBox.backgroundColor = UIColor.blueColor()
+        blueBox.layoutMargins = UIEdgeInsets(top: 0, left: 10, bottom: 0, right: 10)
+        blueBox.center = CGPointMake(scrollView.frame.size.width / 2, navBarHeight)
+        self.scrollView.addSubview(blueBox)
+        
+        var purpleLabel = UILabel(frame: CGRect(x: 0, y: CGRectGetMaxY(blueBox.frame), width: self.view.bounds.size.width, height: 1400))
+        purpleLabel.backgroundColor = UIColor.purpleColor()
+        purpleLabel.textColor = UIColor.whiteColor()
+        self.scrollView.addSubview(purpleLabel)
+     
+        var redBox = UIView(frame: CGRect(x: 0, y: CGRectGetMaxY(purpleLabel.frame), width: self.view.bounds.size.width - 20, height: 20))
+        redBox.backgroundColor = UIColor.redColor()
+        redBox.layoutMargins = UIEdgeInsets(top: 0, left: 10, bottom: 0, right: 10)
+        redBox.center = CGPointMake(scrollView.frame.size.width / 2, CGRectGetMaxY(purpleLabel.frame))
+        self.scrollView.addSubview(redBox)
         
     }
     
