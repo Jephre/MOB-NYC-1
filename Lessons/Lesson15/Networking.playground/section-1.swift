@@ -16,12 +16,12 @@ if let url = NSURL(string: "http://google.com") {
     task.resume()
 }
 
-if let url = NSURL(string: "http://www.reddit.com/.json") {
-    let task = NSURLSession.sharedSession().dataTaskWithURL(url, completionHandler: { (data, response, error) -> Void in
-        var string = NSString(data: data, encoding: NSUTF8StringEncoding)
-            println(string)
-        var json = NSJSONSerialization.JSONObjectWithData(data, options: .allZeros, error: nil)
-        println(json)
-    })
-    task.resume()
-}
+//if let url = NSURL(string: "http://www.reddit.com/.json") {
+//    let task = NSURLSession.sharedSession().dataTaskWithURL(url, completionHandler: { (data, response, error) -> Void in
+//        var string = NSString(data: data, encoding: NSUTF8StringEncoding)
+//            println(string)
+//        var json = NSJSONSerialization.JSONObjectWithData(data, options: .allZeros, error: nil)
+//        println(json)
+//    })
+//    task.resume()
+//}

@@ -10,7 +10,7 @@ import UIKit
 
 class FourthViewController: ExerciseViewController {
 
-    let scrollView = UIScrollView(frame: UIScreen.mainScreen().bounds)
+    let scrollView = UIScrollView()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -26,9 +26,10 @@ class FourthViewController: ExerciseViewController {
         
         Your view should be in self.exerciseView, not self.view.
         */
+        scrollView.frame = CGRect(x: 0, y: 0, width: self.exerciseView.frame.width, height: 1000)
         self.scrollView.contentSize = CGSize(width: self.scrollView.bounds.size.width, height: 2000)
         scrollView.scrollEnabled = true
-        scrollView.backgroundColor = UIColor.redColor()
+        scrollView.backgroundColor = UIColor.greenColor()
         self.exerciseView.addSubview(scrollView)
         
         var navBarHeight = self.navigationController?.navigationBar.frame.maxY ?? exerciseView.frame.minY
