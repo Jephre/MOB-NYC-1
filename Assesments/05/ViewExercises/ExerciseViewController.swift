@@ -13,7 +13,12 @@ class ExerciseViewController: UIViewController {
     let exerciseDescription = UILabel()
     
     // it's possible to refer to the toolbar as a class variable by bringing it out here. (this is helpful to make sure that any functions that reference the space between the toolbar + navbar aren't affected by the toolbar/navbar height changing.
-        
+    
+    // Nav and toolbar dimensions
+    var navMaxY = CGFloat()
+    let toolHeight:CGFloat = 44
+    var toolMinY = CGFloat()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -48,6 +53,11 @@ class ExerciseViewController: UIViewController {
                 )],
             animated: false
         )
+        // Capture nav and toolbar dimensions
+        if let navFrame = self.navigationController?.navigationBar.frame {
+            navMaxY = CGRectGetMaxY(navFrame)
+        }
+        toolMinY = CGRectGetMinY(toolbar.frame)
     }
     
     func didTapFlip() {
