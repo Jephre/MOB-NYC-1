@@ -1,0 +1,420 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A60537111ABB89C300AFBF58 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A60537101ABB89C300AFBF58 /* AppDelegate.swift */; };
+		A60537131ABB89C300AFBF58 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A60537121ABB89C300AFBF58 /* ViewController.swift */; };
+		A60537161ABB89C300AFBF58 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A60537141ABB89C300AFBF58 /* Main.storyboard */; };
+		A60537181ABB89C300AFBF58 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A60537171ABB89C300AFBF58 /* Images.xcassets */; };
+		A605371B1ABB89C300AFBF58 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = A60537191ABB89C300AFBF58 /* LaunchScreen.xib */; };
+		A60537271ABB89C300AFBF58 /* TLM_Price_EstimatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A60537261ABB89C300AFBF58 /* TLM_Price_EstimatorTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A60537211ABB89C300AFBF58 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A60537031ABB89C300AFBF58 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A605370A1ABB89C300AFBF58;
+			remoteInfo = "TLM Price Estimator";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		A605370B1ABB89C300AFBF58 /* TLM Price Estimator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "TLM Price Estimator.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A605370F1ABB89C300AFBF58 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A60537101ABB89C300AFBF58 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		A60537121ABB89C300AFBF58 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		A60537151ABB89C300AFBF58 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		A60537171ABB89C300AFBF58 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		A605371A1ABB89C300AFBF58 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		A60537201ABB89C300AFBF58 /* TLM Price EstimatorTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "TLM Price EstimatorTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A60537251ABB89C300AFBF58 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A60537261ABB89C300AFBF58 /* TLM_Price_EstimatorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TLM_Price_EstimatorTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A60537081ABB89C300AFBF58 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A605371D1ABB89C300AFBF58 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A60537021ABB89C300AFBF58 = {
+			isa = PBXGroup;
+			children = (
+				A605370D1ABB89C300AFBF58 /* TLM Price Estimator */,
+				A60537231ABB89C300AFBF58 /* TLM Price EstimatorTests */,
+				A605370C1ABB89C300AFBF58 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A605370C1ABB89C300AFBF58 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A605370B1ABB89C300AFBF58 /* TLM Price Estimator.app */,
+				A60537201ABB89C300AFBF58 /* TLM Price EstimatorTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A605370D1ABB89C300AFBF58 /* TLM Price Estimator */ = {
+			isa = PBXGroup;
+			children = (
+				A60537101ABB89C300AFBF58 /* AppDelegate.swift */,
+				A60537121ABB89C300AFBF58 /* ViewController.swift */,
+				A60537141ABB89C300AFBF58 /* Main.storyboard */,
+				A60537171ABB89C300AFBF58 /* Images.xcassets */,
+				A60537191ABB89C300AFBF58 /* LaunchScreen.xib */,
+				A605370E1ABB89C300AFBF58 /* Supporting Files */,
+			);
+			path = "TLM Price Estimator";
+			sourceTree = "<group>";
+		};
+		A605370E1ABB89C300AFBF58 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				A605370F1ABB89C300AFBF58 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		A60537231ABB89C300AFBF58 /* TLM Price EstimatorTests */ = {
+			isa = PBXGroup;
+			children = (
+				A60537261ABB89C300AFBF58 /* TLM_Price_EstimatorTests.swift */,
+				A60537241ABB89C300AFBF58 /* Supporting Files */,
+			);
+			path = "TLM Price EstimatorTests";
+			sourceTree = "<group>";
+		};
+		A60537241ABB89C300AFBF58 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				A60537251ABB89C300AFBF58 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A605370A1ABB89C300AFBF58 /* TLM Price Estimator */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A605372A1ABB89C300AFBF58 /* Build configuration list for PBXNativeTarget "TLM Price Estimator" */;
+			buildPhases = (
+				A60537071ABB89C300AFBF58 /* Sources */,
+				A60537081ABB89C300AFBF58 /* Frameworks */,
+				A60537091ABB89C300AFBF58 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "TLM Price Estimator";
+			productName = "TLM Price Estimator";
+			productReference = A605370B1ABB89C300AFBF58 /* TLM Price Estimator.app */;
+			productType = "com.apple.product-type.application";
+		};
+		A605371F1ABB89C300AFBF58 /* TLM Price EstimatorTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A605372D1ABB89C300AFBF58 /* Build configuration list for PBXNativeTarget "TLM Price EstimatorTests" */;
+			buildPhases = (
+				A605371C1ABB89C300AFBF58 /* Sources */,
+				A605371D1ABB89C300AFBF58 /* Frameworks */,
+				A605371E1ABB89C300AFBF58 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A60537221ABB89C300AFBF58 /* PBXTargetDependency */,
+			);
+			name = "TLM Price EstimatorTests";
+			productName = "TLM Price EstimatorTests";
+			productReference = A60537201ABB89C300AFBF58 /* TLM Price EstimatorTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A60537031ABB89C300AFBF58 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0610;
+				ORGANIZATIONNAME = "Jeffrey Lee";
+				TargetAttributes = {
+					A605370A1ABB89C300AFBF58 = {
+						CreatedOnToolsVersion = 6.1.1;
+					};
+					A605371F1ABB89C300AFBF58 = {
+						CreatedOnToolsVersion = 6.1.1;
+						TestTargetID = A605370A1ABB89C300AFBF58;
+					};
+				};
+			};
+			buildConfigurationList = A60537061ABB89C300AFBF58 /* Build configuration list for PBXProject "TLM Price Estimator" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A60537021ABB89C300AFBF58;
+			productRefGroup = A605370C1ABB89C300AFBF58 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A605370A1ABB89C300AFBF58 /* TLM Price Estimator */,
+				A605371F1ABB89C300AFBF58 /* TLM Price EstimatorTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A60537091ABB89C300AFBF58 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A60537161ABB89C300AFBF58 /* Main.storyboard in Resources */,
+				A605371B1ABB89C300AFBF58 /* LaunchScreen.xib in Resources */,
+				A60537181ABB89C300AFBF58 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A605371E1ABB89C300AFBF58 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A60537071ABB89C300AFBF58 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A60537131ABB89C300AFBF58 /* ViewController.swift in Sources */,
+				A60537111ABB89C300AFBF58 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A605371C1ABB89C300AFBF58 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A60537271ABB89C300AFBF58 /* TLM_Price_EstimatorTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A60537221ABB89C300AFBF58 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A605370A1ABB89C300AFBF58 /* TLM Price Estimator */;
+			targetProxy = A60537211ABB89C300AFBF58 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		A60537141ABB89C300AFBF58 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A60537151ABB89C300AFBF58 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		A60537191ABB89C300AFBF58 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A605371A1ABB89C300AFBF58 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		A60537281ABB89C300AFBF58 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		A60537291ABB89C300AFBF58 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A605372B1ABB89C300AFBF58 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "TLM Price Estimator/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		A605372C1ABB89C300AFBF58 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "TLM Price Estimator/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		A605372E1ABB89C300AFBF58 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "TLM Price EstimatorTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TLM Price Estimator.app/TLM Price Estimator";
+			};
+			name = Debug;
+		};
+		A605372F1ABB89C300AFBF58 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "TLM Price EstimatorTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TLM Price Estimator.app/TLM Price Estimator";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A60537061ABB89C300AFBF58 /* Build configuration list for PBXProject "TLM Price Estimator" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A60537281ABB89C300AFBF58 /* Debug */,
+				A60537291ABB89C300AFBF58 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A605372A1ABB89C300AFBF58 /* Build configuration list for PBXNativeTarget "TLM Price Estimator" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A605372B1ABB89C300AFBF58 /* Debug */,
+				A605372C1ABB89C300AFBF58 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		A605372D1ABB89C300AFBF58 /* Build configuration list for PBXNativeTarget "TLM Price EstimatorTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A605372E1ABB89C300AFBF58 /* Debug */,
+				A605372F1ABB89C300AFBF58 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A60537031ABB89C300AFBF58 /* Project object */;
+}
