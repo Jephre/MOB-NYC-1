@@ -36,6 +36,11 @@ class ViewController: UIViewController, UIAlertViewDelegate, MKMapViewDelegate {
         alert.show()
     }
     
+    override func viewWillAppear(animated: Bool) {
+        var query = PFQuery(className: "Place")
+        query.findObjectsInBackgroundWithBlock(objects, error) -> Void in
+    }
+    
     func mapView(mapView: MKMapView!, viewForAnnotation annotation: MKAnnotation!) -> MKAnnotationView! {
         var annotationView = mapView.dequeueReusableAnnotationViewWithIdentifier("MapAnnotation")
         
@@ -61,9 +66,17 @@ class ViewController: UIViewController, UIAlertViewDelegate, MKMapViewDelegate {
         var search = MKLocalSearch(request: searchRequest)
         search.startWithCompletionHandler { (response, error) -> Void in
             if let mapItem = response.mapItems.first as? MKMapItem {
-                var mapItem = MapPlace(coordinate: mapItem.placemark.coordinate)
-                mapItem.title = name
-                self.mapItems.append(mapItem)
+                // create a new parse object
+                var parseItem = PFObject(className: "Place")
+                // to get and set, use dictionary syntax
+                parseItem.setValue(name, forKey: "name")
+
+                parseItem.setValue(PFGeoPoint(latitude: mapItem.placemark.location.coordinate.latitude, longitude: mapItem.placemark.coordinate.longitude), forKey: "geopoint")
+                // save the set values in memory
+                parseItem.saveInBackground()
+//                var mapItem = MapPlace(coordinate: mapItem.placemark.coordinate)
+//                mapItem.title = name
+//                self.mapItems.append(mapItem)
             }
         }
     }

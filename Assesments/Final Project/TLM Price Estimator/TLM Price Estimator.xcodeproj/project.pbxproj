@@ -13,6 +13,9 @@
 		A60537181ABB89C300AFBF58 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A60537171ABB89C300AFBF58 /* Images.xcassets */; };
 		A605371B1ABB89C300AFBF58 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = A60537191ABB89C300AFBF58 /* LaunchScreen.xib */; };
 		A60537271ABB89C300AFBF58 /* TLM_Price_EstimatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A60537261ABB89C300AFBF58 /* TLM_Price_EstimatorTests.swift */; };
+		A662F8E21ABBBAD50067743C /* RotatingNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A662F8E11ABBBAD50067743C /* RotatingNavigationController.swift */; };
+		A6DD378D1ABD0BEA00E8A390 /* ModalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6DD378C1ABD0BEA00E8A390 /* ModalViewController.swift */; };
+		A6DD378F1ABE6CC700E8A390 /* SwiftyJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6DD378E1ABE6CC700E8A390 /* SwiftyJSON.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +39,9 @@
 		A60537201ABB89C300AFBF58 /* TLM Price EstimatorTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "TLM Price EstimatorTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A60537251ABB89C300AFBF58 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A60537261ABB89C300AFBF58 /* TLM_Price_EstimatorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TLM_Price_EstimatorTests.swift; sourceTree = "<group>"; };
+		A662F8E11ABBBAD50067743C /* RotatingNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RotatingNavigationController.swift; sourceTree = "<group>"; };
+		A6DD378C1ABD0BEA00E8A390 /* ModalViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ModalViewController.swift; sourceTree = "<group>"; };
+		A6DD378E1ABE6CC700E8A390 /* SwiftyJSON.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftyJSON.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,7 +85,10 @@
 			children = (
 				A60537101ABB89C300AFBF58 /* AppDelegate.swift */,
 				A60537121ABB89C300AFBF58 /* ViewController.swift */,
+				A662F8E11ABBBAD50067743C /* RotatingNavigationController.swift */,
 				A60537141ABB89C300AFBF58 /* Main.storyboard */,
+				A6DD378C1ABD0BEA00E8A390 /* ModalViewController.swift */,
+				A6DD378E1ABE6CC700E8A390 /* SwiftyJSON.swift */,
 				A60537171ABB89C300AFBF58 /* Images.xcassets */,
 				A60537191ABB89C300AFBF58 /* LaunchScreen.xib */,
 				A605370E1ABB89C300AFBF58 /* Supporting Files */,
@@ -212,8 +221,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A6DD378D1ABD0BEA00E8A390 /* ModalViewController.swift in Sources */,
 				A60537131ABB89C300AFBF58 /* ViewController.swift in Sources */,
 				A60537111ABB89C300AFBF58 /* AppDelegate.swift in Sources */,
+				A6DD378F1ABE6CC700E8A390 /* SwiftyJSON.swift in Sources */,
+				A662F8E21ABBBAD50067743C /* RotatingNavigationController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -405,6 +417,7 @@
 				A605372C1ABB89C300AFBF58 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		A605372D1ABB89C300AFBF58 /* Build configuration list for PBXNativeTarget "TLM Price EstimatorTests" */ = {
 			isa = XCConfigurationList;
@@ -413,6 +426,7 @@
 				A605372F1ABB89C300AFBF58 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
