@@ -82,7 +82,7 @@ class ModalViewController: UIViewController {
         calculatedTotalLabel.font = UIFont.preferredFontForTextStyle(UIFontTextStyleBody)
         calculatedTotalLabel.font = UIFont.boldSystemFontOfSize(16.0)
         calculatedTotalLabel.sizeToFit()
-        calculatedTotalLabel.text = "$\(calculatedTotal) CAD"
+        calculatedTotalLabel.text = "$" + String(format: "%.2f", calculatedTotal) + " in CDN"
     }
     
     // actual calculation done here
@@ -101,6 +101,8 @@ class ModalViewController: UIViewController {
                 shippingContainer = shipping
             }
         }
+        
+        var variableBrokerageCharge: Float = 6.70
         
         // calculate brokerage charge based on price ranges
         if priceContainer >= 0 && priceContainer <= 20 {
@@ -139,7 +141,67 @@ class ModalViewController: UIViewController {
         else if priceContainer >= 1600.01 && priceContainer <= 2500 {
             brokerageCharge = 96.50
         }
-        else if priceContainer >= 2500.01 {
+        else if priceContainer <= 3500 {
+            brokerageCharge = (1 * variableBrokerageCharge) + 96.50
+        }
+        else if priceContainer <= 4500 {
+            brokerageCharge = (2 * variableBrokerageCharge) + 96.50
+        }
+        else if priceContainer <= 5500 {
+            brokerageCharge = (3 * variableBrokerageCharge) + 96.50
+        }
+        else if priceContainer <= 6500 {
+            brokerageCharge = (4 * variableBrokerageCharge) + 96.50
+        }
+        else if priceContainer <= 7500 {
+            brokerageCharge = (5 * variableBrokerageCharge) + 96.50
+        }
+        else if priceContainer <= 8500 {
+            brokerageCharge = (6 * variableBrokerageCharge) + 96.50
+        }
+        else if priceContainer <= 9500 {
+            brokerageCharge = (7 * variableBrokerageCharge) + 96.50
+        }
+        else if priceContainer <= 10500 {
+            brokerageCharge = (8 * variableBrokerageCharge) + 96.50
+        }
+        else if priceContainer <= 11500 {
+            brokerageCharge = (9 * variableBrokerageCharge) + 96.50
+        }
+        else if priceContainer <= 12500 {
+            brokerageCharge = (10 * variableBrokerageCharge) + 96.50
+        }
+        else if priceContainer <= 13500 {
+            brokerageCharge = (11 * variableBrokerageCharge) + 96.50
+        }
+        else if priceContainer <= 14500 {
+            brokerageCharge = (12 * variableBrokerageCharge) + 96.50
+        }
+        else if priceContainer <= 15500 {
+            brokerageCharge = (13 * variableBrokerageCharge) + 96.50
+        }
+        else if priceContainer <= 16500 {
+            brokerageCharge = (14 * variableBrokerageCharge) + 96.50
+        }
+        else if priceContainer <= 17500 {
+            brokerageCharge = (15 * variableBrokerageCharge) + 96.50
+        }
+        else if priceContainer <= 18500 {
+            brokerageCharge = (16 * variableBrokerageCharge) + 96.50
+        }
+        else if priceContainer <= 19500 {
+            brokerageCharge = (17 * variableBrokerageCharge) + 96.50
+        }
+        else if priceContainer <= 20500 {
+            brokerageCharge = (18 * variableBrokerageCharge) + 96.50
+        }
+        else if priceContainer <= 21500 {
+            brokerageCharge = (19 * variableBrokerageCharge) + 96.50
+        }
+        else if priceContainer <= 22500 {
+            brokerageCharge = (20 * variableBrokerageCharge) + 96.50
+        }
+        else if priceContainer > 22500 {
             brokerageCharge = 0
         }
         
@@ -158,7 +220,6 @@ class ModalViewController: UIViewController {
     func autoLayout() {
         self.view.addSubview(calculatedTotalLabel)
         calculatedTotalLabel.setTranslatesAutoresizingMaskIntoConstraints(false)
-
         
         self.view.addConstraint(NSLayoutConstraint(item: calculatedTotalLabel, attribute: .Width, relatedBy: .Equal, toItem: view, attribute: .Width, multiplier: 1.0, constant: -80))
         self.view.addConstraint(NSLayoutConstraint(item: calculatedTotalLabel, attribute: .Height, relatedBy: .Equal, toItem: nil, attribute: .NotAnAttribute, multiplier: 1.0, constant: 50))
